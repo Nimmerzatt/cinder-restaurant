@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import site from "@/content/restaurant.json";
 
@@ -7,6 +8,8 @@ const links = [
   { href: "#story", label: "Our story" },
   { href: "#menu", label: "Menu" },
   { href: "#private", label: "Private dining" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#about", label: "About" },
   { href: "#visit", label: "Visit" },
 ];
 
@@ -71,20 +74,32 @@ export default function Nav() {
           <span className="font-display text-2xl font-light tracking-[0.35em]">{site.name.toUpperCase()}</span>
           <span className="w-12" />
         </div>
-        <ul className="flex flex-1 flex-col items-center justify-center gap-6">
-          {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                tabIndex={open ? 0 : -1}
-                onClick={() => setOpen(false)}
-                className="font-display text-[clamp(2.4rem,6vw,4.5rem)] font-light italic text-wheat transition hover:text-glow"
+        <div className="grid flex-1 items-center gap-10 px-[4vw] md:grid-cols-2">
+          <ul className="flex flex-col items-center gap-4 md:items-start md:pl-[6vw]">
+            {links.map((l, i) => (
+              <li
+                key={l.href}
+                className={`transition duration-700 ${open ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
+                style={{ transitionDelay: open ? `${0.15 + i * 0.06}s` : "0s" }}
               >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+                <a
+                  href={l.href}
+                  tabIndex={open ? 0 : -1}
+                  onClick={() => setOpen(false)}
+                  className="group flex items-baseline gap-4 font-display text-[clamp(2.2rem,5vw,4.2rem)] font-light italic leading-tight text-wheat transition hover:text-glow"
+                >
+                  <span className="font-sans text-xs not-italic tracking-[0.2em] text-muted">0{i + 1}</span>
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div
+            className={`relative hidden h-[62vh] overflow-hidden transition duration-1000 md:block ${open ? "opacity-100" : "opacity-0"}`}
+          >
+            <Image src="/img/bar.jpg" alt="" fill sizes="45vw" className={`object-cover transition duration-[2s] ${open ? "scale-100" : "scale-110"}`} />
+          </div>
+        </div>
         <p className="pb-10 text-center text-sm text-muted">
           {site.contact.hours.join(", ")} · {site.contact.address.join(", ")}
         </p>

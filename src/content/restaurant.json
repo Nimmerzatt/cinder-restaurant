@@ -1,42 +1,81 @@
 {
   "name": "Cinder",
   "hero": {
-    "kicker": "Restaurant & Bar, Heidelberg",
-    "image": "/img/beef-cheek.jpg",
-    "imageAlt": "Braised beef cheek with celeriac purée, crispy potatoes and shaved fennel"
+    "kicker": "Wood-fire restaurant & bar · Heidelberg",
+    "line": "where the fire sets the pace",
+    "title": ["Cooked over embers.", "Served by the river."],
+    "image": "/img/hero-dining-room.jpg",
+    "imageAlt": "Candlelit dining room with warm pendant lights and set tables"
   },
   "tagline": "Seasonal food, cooked over a wood fire.",
-  "manifesto": {
-    "lead": "Seasonal food from farms around Heidelberg,",
-    "rest": "cooked over a wood fire and served in a room that feels like a good night out.",
+  "intro": {
+    "eyebrow": "Fire & season",
+    "title": "Cinder, where the evening slows down.",
+    "text": "A wood-fire kitchen in Heidelberg's old town. We cook what the farms of the Rhine-Neckar bring us each week, let the embers do most of the work, and pour wines from the slopes you can see from the river.",
+    "link": { "label": "explore the kitchen", "href": "#menu" },
+    "images": [
+      { "src": "/img/flame-pan.jpg", "alt": "Chef flambéing in a pan over open flames" },
+      { "src": "/img/sauce-pour.jpg", "alt": "Chef pouring sauce over a plated dish" }
+    ],
     "facts": [
-      {
-        "value": "80 km",
-        "label": "Sourcing radius"
-      },
-      {
-        "value": "6",
-        "label": "Courses"
-      },
-      {
-        "value": "36",
-        "label": "Seats"
-      }
+      { "value": "80 km", "label": "Sourcing radius" },
+      { "value": "6", "label": "Courses" },
+      { "value": "36", "label": "Seats" }
     ]
   },
-  "plates": [
+  "menuFeature": {
+    "eyebrow": "Menu",
+    "title": "Flavours that wait for the embers.",
+    "text": "Nothing here is rushed. Beef cheek braises for twelve hours, beetroot roasts whole in the ashes, and every sauce reduces until it tastes of the fire it came from. The menu changes with the week, never with the trend.",
+    "image": "/img/wellington.jpg",
+    "imageAlt": "Beef fillet in pastry, sliced on a dark plate"
+  },
+  "fire": {
+    "eyebrow": "The hearth",
+    "title": "One fire. Lit at noon, never rushed.",
+    "text": "Beech and oak from the Odenwald. No gas, no shortcuts. By the time you sit down, the embers have been working for hours.",
+    "image": "/img/fire-kitchen.jpg",
+    "imageAlt": "Chef cooking over open flames in a dark kitchen"
+  },
+  "cards": [
     {
-      "image": "/img/beef-cheek.jpg",
-      "alt": "Braised beef cheek with celeriac purée, crispy potatoes and shaved fennel",
-      "title": "Beef cheek, celeriac, fennel",
-      "text": "Braised for twelve hours, finished in the embers"
+      "title": "Chef's table",
+      "text": "Six seats at the pass. Watch every plate leave the fire.",
+      "image": "/img/chef-plating.jpg",
+      "alt": "Chef garnishing a plate with tweezers",
+      "href": "#book"
     },
     {
-      "image": "/img/beetroot.jpg",
-      "alt": "Roasted beetroot with buttermilk, blackberries and hazelnut crumble",
-      "title": "Beetroot, buttermilk, blackberry",
-      "text": "Roasted whole in the ashes, served with hazelnut"
+      "title": "The bar",
+      "text": "Smoked old fashioneds and Riesling by the glass.",
+      "image": "/img/old-fashioned.jpg",
+      "alt": "Bartender pouring whisky over ice",
+      "href": "#gallery"
+    },
+    {
+      "title": "Private dining",
+      "text": "Up to 36 guests, with a menu built around you.",
+      "image": "/img/candle-table.jpg",
+      "alt": "Long candlelit table set for a dinner party",
+      "href": "#private"
+    },
+    {
+      "title": "Gift cards",
+      "text": "An evening by the fire, wrapped for someone else.",
+      "image": "/img/salmon.jpg",
+      "alt": "Seared fish with vegetables and a glass of red wine",
+      "href": "#book"
     }
+  ],
+  "gallery": [
+    { "src": "/img/dim-room.jpg", "alt": "Dimly lit dining room" },
+    { "src": "/img/beetroot.jpg", "alt": "Roasted beetroot with buttermilk and blackberries" },
+    { "src": "/img/red-chairs.jpg", "alt": "Red velvet chairs beside an arched window" },
+    { "src": "/img/hearth.jpg", "alt": "Logs burning in the hearth" },
+    { "src": "/img/cocktail-bar.jpg", "alt": "Cocktail on the bar counter" },
+    { "src": "/img/beef-cheek.jpg", "alt": "Braised beef cheek with celeriac purée" },
+    { "src": "/img/bar.jpg", "alt": "Long marble bar with stools" },
+    { "src": "/img/dark-cocktail.jpg", "alt": "Dark cocktail with a cherry" }
   ],
   "alaCarte": [
     {
@@ -108,73 +147,39 @@
     "price": 89,
     "description": "The tasting menu follows what our farmers bring each week. Vegetarian version on request. Tell us about allergies when you book.",
     "pairings": [
-      {
-        "price": 49,
-        "label": "Wine pairing"
-      },
-      {
-        "price": 35,
-        "label": "Non-alcoholic pairing"
-      }
+      { "price": 49, "label": "Wine pairing" },
+      { "price": 35, "label": "Non-alcoholic pairing" }
     ],
     "courses": [
-      {
-        "name": "Bread from the fire",
-        "description": "Sourdough, cultured butter, smoked lard"
-      },
-      {
-        "name": "Beetroot",
-        "description": "Buttermilk, blackberry, hazelnut"
-      },
-      {
-        "name": "Trout",
-        "description": "Horseradish, cucumber, rye"
-      },
-      {
-        "name": "Pumpkin",
-        "description": "Brown butter, seeds"
-      },
-      {
-        "name": "Beef cheek",
-        "description": "Celeriac, fennel, red wine"
-      },
-      {
-        "name": "Apple",
-        "description": "Brown butter, sour cream"
-      }
+      { "name": "Bread from the fire", "description": "Sourdough, cultured butter, smoked lard" },
+      { "name": "Beetroot", "description": "Buttermilk, blackberry, hazelnut" },
+      { "name": "Trout", "description": "Horseradish, cucumber, rye" },
+      { "name": "Pumpkin", "description": "Brown butter, seeds" },
+      { "name": "Beef cheek", "description": "Celeriac, fennel, red wine" },
+      { "name": "Apple", "description": "Brown butter, sour cream" }
     ]
   },
   "privateDining": {
     "title": "Your evening, your menu.",
-    "text": "Birthdays, team dinners, weddings. Up to 36 guests, with a menu we build around you."
+    "text": "Birthdays, team dinners, weddings. Up to 36 guests at one long table, with a menu we build around you.",
+    "image": "/img/long-table.jpg"
+  },
+  "about": {
+    "eyebrow": "Hospitality",
+    "title": "Hospitality that feels like coming home.",
+    "text": "Cinder sits in a 300-year-old vaulted room a few steps from the Old Bridge. Thick walls, low light, one long bar. We wanted a place where you can come for a full tasting menu or just a glass of wine and a plate of bread, and feel equally welcome.",
+    "image": "/img/old-room.jpg",
+    "imageAlt": "Vaulted dining room with a small window and set tables"
   },
   "booking": {
-    "times": [
-      "17:30",
-      "18:00",
-      "18:30",
-      "19:00",
-      "19:30",
-      "20:00",
-      "20:30",
-      "21:00"
-    ],
-    "closedWeekdays": [
-      0,
-      1
-    ],
+    "times": ["17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00"],
+    "closedWeekdays": [0, 1],
     "maxGuests": 8
   },
   "contact": {
-    "hours": [
-      "Tuesday to Saturday",
-      "17:30 to 23:00"
-    ],
+    "hours": ["Tuesday to Saturday", "17:30 to 23:00"],
     "lastOrders": "Last orders 21:30",
-    "address": [
-      "Musterstraße 12",
-      "69117 Heidelberg"
-    ],
+    "address": ["Musterstraße 12", "69117 Heidelberg"],
     "phone": "+49 6221 000000"
   }
 }

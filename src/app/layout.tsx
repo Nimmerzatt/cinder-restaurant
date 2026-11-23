@@ -12,7 +12,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="antialiased">
+    <html lang="en" className="antialiased" suppressHydrationWarning>
+      <head>
+        {/* Flag JS early so scroll-reveal styles only hide content when they can also show it again */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body>{children}</body>
     </html>
   );

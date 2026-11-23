@@ -30,16 +30,23 @@ Tim's own Keller Hospitality business also wants to sell websites to restaurants
 - `src/app/globals.css` – design tokens (colors, fonts, animations) in the Tailwind `@theme` block
 - `src/app/layout.tsx` – fonts, metadata
 - `src/app/page.tsx` – section order
-- `src/components/`
-  - `Nav.tsx` – fixed nav + full-screen menu overlay
-  - `Hero.tsx` – full-bleed photo, dark overlay, centered CINDER wordmark, slow zoom
+- `src/components/` (page order, redesigned 2026-11-23 after the structure of ballenacabo.com)
+  - Preloader – pure CSS curtain in `page.tsx` + `globals.css` (`.preloader`, `.after-curtain`)
+  - `Nav.tsx` – fixed nav + full-screen menu overlay (numbered links + image)
+  - `Hero.tsx` – full-bleed dining room photo, slow zoom, embers, headline + 2 CTAs
   - `Embers.tsx` – subtle animated sparks (canvas), respects reduced motion
-  - `Manifesto.tsx` – "Our story": centered statement + image/text split with key facts
-  - `Menu.tsx` – tasting menu / à la carte tabs (centered)
-  - `PrivateDining.tsx` – full-bleed image section
+  - `Intro.tsx` – light (linen) section: statement + two overlapping parallax images + facts
+  - `Menu.tsx` – feature split (image + text) and menu card with tasting / à la carte tabs
+  - `Fire.tsx` – full-bleed parallax image about the hearth
+  - `Cards.tsx` – 4 portrait tiles (chef's table, bar, private dining, gift cards), hover zoom
+  - `Gallery.tsx` – endless marquee strip of photos
+  - `PrivateDining.tsx` – full-bleed parallax image section
+  - `About.tsx` – light split section about the room
   - `Booking.tsx` – reservation form (demo only, client-side validation, closed Sun/Mon)
-  - `Footer.tsx`
-- `public/img/` – Tim's own dish photos (beef-cheek.jpg, beetroot.jpg, only 1024px wide)
+  - `Footer.tsx` + `Newsletter.tsx` (demo signup), oversized wordmark
+  - `ScrollFx.tsx` – drives `[data-reveal]` (fade or `="clip"`) and `[data-parallax="0.1"]`
+- `public/img/` – Tim's own dish photos (beef-cheek.jpg, beetroot.jpg) plus free Unsplash photos
+  (Unsplash license, commercial use OK, credited generally in the footer)
 - GitHub: https://github.com/Nimmerzatt/cinder-restaurant (public, branch `main`)
 - Live: https://cinder-restaurant.vercel.app (Vercel project `nimmersatt/cinder-restaurant`,
   every push to `main` deploys automatically). Vercel CLI is installed and logged in.
@@ -50,8 +57,7 @@ buttons) · ember #c9965c · muted #a99f8f. Headings: Fraunces light, wide lette
 Small labels use the `.eyebrow` class (uppercase, tracked).
 
 ## Open to-dos / next steps
-1. Hero needs a **large interior/atmosphere photo** (dining room, bar, terrace) or a video instead of the
-   dish photo – the references all show the room. Current dish photos are low-res for full screen.
+1. ~~Hero interior photo~~ – done (Unsplash). Optional: hero video.
 2. ~~Put the site online~~ – done 2026-11-23, see "Live" above.
 3. Add the live link + screenshots as a portfolio item on Tim's Upwork profile.
 4. Possibly build 1–2 more demo sites in different styles (e.g. bright café/brunch, boutique hotel),
