@@ -40,7 +40,7 @@ Tim's own Keller Hospitality business also wants to sell websites to restaurants
   - `Booking.tsx` – reservation form (demo only, client-side validation, closed Sun/Mon)
   - `Footer.tsx`
 - `public/img/` – Tim's own dish photos (beef-cheek.jpg, beetroot.jpg, only 1024px wide)
-- Unused leftovers that can be deleted: `src/components/Plates.tsx`, `src/components/OpenStatus.tsx`
+- Local git repo on branch `main` (initialized 2026-11-23). Not pushed to GitHub yet.
 
 ## Design tokens
 soot #14110f (background) · ash #1f1b18 (alt sections) · wheat #efe7da (text) · glow #e6c48f (gold accent,
