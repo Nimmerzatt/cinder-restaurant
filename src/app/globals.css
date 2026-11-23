@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soot: #14110f;
+  --color-ash: #1f1b18;
+  --color-ember: #c9965c;
+  --color-glow: #e6c48f;
+  --color-wheat: #efe7da;
+  --color-linen: #f3eee5;
+  --color-field: #a9b58a;
+  --color-muted: #a99f8f;
+  --color-stone: #5b5249;
+
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Inter Tight Variable", system-ui, sans-serif;
+
+  --animate-rise: rise 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-drift: drift 18s ease-out both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes drift {
+    from { transform: scale(1.12); }
+    to { transform: scale(1); }
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-soot);
+  color: var(--color-wheat);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+:focus-visible { outline: 2px solid var(--color-glow); outline-offset: 3px; }
+
+
+.rule { border-top: 1px solid rgb(233 220 195 / 0.14); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-rise, .animate-drift { animation: none; }
+}
+
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.32em; text-transform: uppercase; }

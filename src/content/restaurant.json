@@ -1,0 +1,180 @@
+{
+  "name": "Cinder",
+  "hero": {
+    "kicker": "Restaurant & Bar, Heidelberg",
+    "image": "/img/beef-cheek.jpg",
+    "imageAlt": "Braised beef cheek with celeriac purée, crispy potatoes and shaved fennel"
+  },
+  "tagline": "Seasonal food, cooked over a wood fire.",
+  "manifesto": {
+    "lead": "Seasonal food from farms around Heidelberg,",
+    "rest": "cooked over a wood fire and served in a room that feels like a good night out.",
+    "facts": [
+      {
+        "value": "80 km",
+        "label": "Sourcing radius"
+      },
+      {
+        "value": "6",
+        "label": "Courses"
+      },
+      {
+        "value": "36",
+        "label": "Seats"
+      }
+    ]
+  },
+  "plates": [
+    {
+      "image": "/img/beef-cheek.jpg",
+      "alt": "Braised beef cheek with celeriac purée, crispy potatoes and shaved fennel",
+      "title": "Beef cheek, celeriac, fennel",
+      "text": "Braised for twelve hours, finished in the embers"
+    },
+    {
+      "image": "/img/beetroot.jpg",
+      "alt": "Roasted beetroot with buttermilk, blackberries and hazelnut crumble",
+      "title": "Beetroot, buttermilk, blackberry",
+      "text": "Roasted whole in the ashes, served with hazelnut"
+    }
+  ],
+  "alaCarte": [
+    {
+      "section": "To start",
+      "dishes": [
+        {
+          "name": "Beetroot & buttermilk",
+          "price": 14,
+          "description": "Blackberries, hazelnut crumble, dill oil",
+          "notes": "Vegetarian"
+        },
+        {
+          "name": "Smoked trout",
+          "price": 16,
+          "description": "Trout from the Odenwald, horseradish, cucumber, rye"
+        },
+        {
+          "name": "Pumpkin soup",
+          "price": 11,
+          "description": "Roasted Hokkaido, brown butter, pumpkin seed pesto",
+          "notes": "Vegetarian, gluten free"
+        }
+      ]
+    },
+    {
+      "section": "From the fire",
+      "dishes": [
+        {
+          "name": "Beef cheek",
+          "price": 32,
+          "description": "Celeriac purée, crispy potatoes, fennel, red wine jus",
+          "notes": "Gluten free"
+        },
+        {
+          "name": "Arctic char",
+          "price": 29,
+          "description": "Riesling butter sauce, leeks from the embers"
+        },
+        {
+          "name": "Whole celeriac",
+          "price": 24,
+          "description": "Mushroom ragout, walnut, aged mountain cheese",
+          "notes": "Vegetarian"
+        }
+      ]
+    },
+    {
+      "section": "Something sweet",
+      "dishes": [
+        {
+          "name": "Apple & brown butter",
+          "price": 12,
+          "description": "Brown butter cake, sour cream ice cream"
+        },
+        {
+          "name": "Plum & walnut",
+          "price": 12,
+          "description": "Roasted plums, walnut praline, vanilla cream"
+        },
+        {
+          "name": "House bread",
+          "price": 5,
+          "description": "Sourdough from this afternoon, cultured butter"
+        }
+      ]
+    }
+  ],
+  "tasting": {
+    "price": 89,
+    "description": "The tasting menu follows what our farmers bring each week. Vegetarian version on request. Tell us about allergies when you book.",
+    "pairings": [
+      {
+        "price": 49,
+        "label": "Wine pairing"
+      },
+      {
+        "price": 35,
+        "label": "Non-alcoholic pairing"
+      }
+    ],
+    "courses": [
+      {
+        "name": "Bread from the fire",
+        "description": "Sourdough, cultured butter, smoked lard"
+      },
+      {
+        "name": "Beetroot",
+        "description": "Buttermilk, blackberry, hazelnut"
+      },
+      {
+        "name": "Trout",
+        "description": "Horseradish, cucumber, rye"
+      },
+      {
+        "name": "Pumpkin",
+        "description": "Brown butter, seeds"
+      },
+      {
+        "name": "Beef cheek",
+        "description": "Celeriac, fennel, red wine"
+      },
+      {
+        "name": "Apple",
+        "description": "Brown butter, sour cream"
+      }
+    ]
+  },
+  "privateDining": {
+    "title": "Your evening, your menu.",
+    "text": "Birthdays, team dinners, weddings. Up to 36 guests, with a menu we build around you."
+  },
+  "booking": {
+    "times": [
+      "17:30",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00"
+    ],
+    "closedWeekdays": [
+      0,
+      1
+    ],
+    "maxGuests": 8
+  },
+  "contact": {
+    "hours": [
+      "Tuesday to Saturday",
+      "17:30 to 23:00"
+    ],
+    "lastOrders": "Last orders 21:30",
+    "address": [
+      "Musterstraße 12",
+      "69117 Heidelberg"
+    ],
+    "phone": "+49 6221 000000"
+  }
+}
