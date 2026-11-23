@@ -162,7 +162,8 @@
   "privateDining": {
     "title": "Your evening, your menu.",
     "text": "Birthdays, team dinners, weddings. Up to 36 guests at one long table, with a menu we build around you.",
-    "image": "/img/long-table.jpg"
+    "image": "/img/long-table.jpg",
+    "imageAlt": "Long dinner table set with flowers and candles in a dark room"
   },
   "about": {
     "eyebrow": "Hospitality",

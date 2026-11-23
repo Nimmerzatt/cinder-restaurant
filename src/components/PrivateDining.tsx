@@ -5,7 +5,7 @@ export default function PrivateDining() {
   const { privateDining } = site;
   return (
     <section id="private" className="relative flex min-h-[90svh] items-center overflow-hidden">
-      <Image src={privateDining.image} alt="" fill sizes="100vw" data-parallax="0.1" className="object-cover" />
+      <Image src={privateDining.image} alt={privateDining.imageAlt} fill sizes="100vw" data-parallax="0.1" className="object-cover" />
       <div className="absolute inset-0 bg-soot/65" />
       <div className="relative mx-auto max-w-2xl px-6 py-28 text-center">
         <p data-reveal className="eyebrow text-glow">Private dining</p>
