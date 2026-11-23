@@ -40,7 +40,9 @@ Tim's own Keller Hospitality business also wants to sell websites to restaurants
   - `Booking.tsx` – reservation form (demo only, client-side validation, closed Sun/Mon)
   - `Footer.tsx`
 - `public/img/` – Tim's own dish photos (beef-cheek.jpg, beetroot.jpg, only 1024px wide)
-- Local git repo on branch `main` (initialized 2026-11-23). Not pushed to GitHub yet.
+- GitHub: https://github.com/Nimmerzatt/cinder-restaurant (public, branch `main`)
+- Live: https://cinder-restaurant.vercel.app (Vercel project `nimmersatt/cinder-restaurant`,
+  every push to `main` deploys automatically). Vercel CLI is installed and logged in.
 
 ## Design tokens
 soot #14110f (background) · ash #1f1b18 (alt sections) · wheat #efe7da (text) · glow #e6c48f (gold accent,
@@ -50,7 +52,7 @@ Small labels use the `.eyebrow` class (uppercase, tracked).
 ## Open to-dos / next steps
 1. Hero needs a **large interior/atmosphere photo** (dining room, bar, terrace) or a video instead of the
    dish photo – the references all show the room. Current dish photos are low-res for full screen.
-2. Put the site online: push to GitHub, deploy on Vercel, get a public link for the Upwork portfolio.
+2. ~~Put the site online~~ – done 2026-11-23, see "Live" above.
 3. Add the live link + screenshots as a portfolio item on Tim's Upwork profile.
 4. Possibly build 1–2 more demo sites in different styles (e.g. bright café/brunch, boutique hotel),
    reusing the same structure with a different `restaurant.json`.
